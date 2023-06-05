@@ -1,5 +1,8 @@
 # Kanban_App
+<h3>About Project</h3>
+<p>The proposed project will allow students to create multiple boards for different courses and subjects, with columns representing different stages of a task's life cycle such as To Do, In Progress, and Done. The project will also include features such as drag and drop functionality to easily move tasks between columns, adding due dates and priority levels to each task, and the ability to assign tasks to specific team members or collaborators.
 
+</p>
 <h4>Collaborators:</h4>
 <ul>
 <li>1.Rohit Bhosale</li> 
