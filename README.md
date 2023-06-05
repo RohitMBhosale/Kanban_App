@@ -2,7 +2,7 @@
 
 Collaborators:
 
-1.Rohan Bhosale 
+1.Rohit Bhosale 
 2.Abhay Khemnar
 3.Zeeshan Ansari
 4.Ashlesha Bandgar https://github.com/AshleshaBandgar
