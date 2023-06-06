@@ -4,9 +4,10 @@ import store from "./Component/redux";
 import Body from "./Component/body/Body";
 
 function App() {
+ 
   return (
     <Provider store={store}>
-      <div className="App">
+      <div>
     
       <Body/>
 

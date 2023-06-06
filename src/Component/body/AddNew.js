@@ -19,7 +19,8 @@ export default function AddNew({type, parentId}){
         }else{
 
         dispatch(AddList({id:Math.random(),title:inputVal}))   
-        }                                                           // console.log("inputVal")
+        }    
+        hideForm();                                                       // console.log("inputVal")
         setInputVal("")                                            // empty input box
     }
     function handleChange(e){
@@ -34,11 +35,14 @@ export default function AddNew({type, parentId}){
 
   return (
     <div>
-      <button onClick={openForm}>+ Add New</button>
+      <button onClick={openForm}>+ Add {type? "Card": "list"}</button>
       {isFormVisible && <form  onSubmit={HandleSubmit} className="mt-3">
-            <input valu={inputVal} onChange={handleChange}/>
+            <input value={inputVal} 
+                   onChange={handleChange}
+                   placeholder={type ? "Enter Card name":"Enter list name"}
+                   />
             <div className="mt-3">
-            <button onClick={hideForm} className="mr-3">Delete</button>
+            <button onClick={hideForm} className="mr-3">❌</button>
             <button onClick={HandleSubmit} className="px-3 py-1 bg-blue-500">save</button>
             </div>
         </form>}
