@@ -1,0 +1,19 @@
+.app{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .app-navbar{
+    width: 100%;
+    padding: 20px 30px;
+    border-bottom: 3px solid rgb(158, 95, 0);
+    background-color: rgb(133, 91, 0);
+    font-family: 'Courier New', Courier, monospace;
+    
+  } 
+  .app-outer{
+    flex:1;
+    width: 100%;
+    overflow-x: auto;
+  }

@@ -1,0 +1,52 @@
+
+.add-bttn{
+    padding: 10px 20px;
+    background-color: #684700;
+    color: rgb(18, 13, 13);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.add-bttn:hover{
+    background-color: #f4d592;
+
+}
+
+.form-input{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #a88335;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+.form-input:hover{
+    border-color: black;
+}
+.form-bttn{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.form-bttn :hover{
+background-color: #f4d592;
+}
+.cross-bttn{
+    padding: 10px 20px;
+    background-color: #684700;
+    color: rgb(18, 13, 13);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.save-bttn{
+    padding: 10px 20px;
+    background-color:  #684700;
+    color: rgb(18, 13, 13);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
