@@ -1,0 +1,156 @@
+.navbar_section {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  
+      
+  }
+  .leftSide_navbar {
+    height: 80%;
+    width: 19%;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+  }
+  .leftSide_navbar h2 {
+    font-size: 30px;
+    color: black;
+  }
+  .IoStarOutline {
+    margin-left: 10px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .common_btn {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+      rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  }
+  
+  .common_btn:hover {
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  
+  .leftSide_navbar1 {
+    height: 80%;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    padding-left: 5px;
+  }
+  
+  .btn {
+    padding: 5px;
+    width: 45%;
+    height: 33px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    background-color: rgb(212, 241, 241);
+    border-radius: 5px;
+    width: 30%;
+    margin-left: 15px;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: rgba(243, 57, 57, 0.15) 1.95px 1.95px 2.6px;
+  }
+  
+  .AiOutlineTeam {
+    cursor: pointer;
+    margin-right: 5px;
+    color: black;
+  }
+  
+  .BiObjectsVerticalTop {
+    margin-right: 7px;
+  }
+  
+  .rightSide_navbar {
+    width: 53%;
+    height: 80%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .all_btns {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  
+  .common_btn2 {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 30px;
+    border-radius: 3px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+      rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  }
+  
+  .common_btn2:hover {
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  
+  .profile_sarchDiv {
+    cursor: pointer;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    color: black;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+      rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+      color: black;
+  }
+  
+  .profile:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  
+  .share {
+    cursor: pointer;
+    width: 45%;
+    height: 33px;
+    color: black;
+  }
