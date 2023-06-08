@@ -15,9 +15,9 @@
     align-items: center;
     margin-left: 1%;
   }
-  .leftSide_navbar h2 {
+  .leftSide_navbar h1 {
     font-size: 30px;
-    color: black;
+    color: goldenrod;
   }
   .IoStarOutline {
     margin-left: 10px;
@@ -51,6 +51,9 @@
     align-items: center;
     margin-left: 5px;
     padding-left: 5px;
+  }
+  h2{
+    color: goldenrod;
   }
   
   .btn {

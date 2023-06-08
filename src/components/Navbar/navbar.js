@@ -11,7 +11,7 @@ export default function Navbar() {
     <>
       <div className={styles.navbar_section}>
         <div className={styles.leftSide_navbar}>
-          <h2>Kanban App</h2>
+          <h1>Kanban App</h1>
           <IoStarOutline className={styles.IoStarOutline} size={17} />
         </div>
         <div className={styles.leftSide_navbar1}>

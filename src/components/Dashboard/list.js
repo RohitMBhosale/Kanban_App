@@ -55,11 +55,15 @@ export default function List() {
             {listItem.map((list) => (
                 <div className={styles.list} key={list.id}>
                     <div className={styles.title}>
-                    <blockquote  contenteditable="true">
+                    <div className={styles.mainlist}>
+                    <blockquote  contenteditable="true" >
                         {list.title}
-                        </blockquote>   
-                        {list?.children?.length > 0 && list.children.map((children) => <Card key={children.id} cardInfo={children} />)}
-                        <div className={styles.list_addnew}>
+                        </blockquote> 
+                        </div>  
+                        
+                        {list?.children?.length > 0 && list.children.map((children) => <div className={styles.list_addnew}> <Card key={children.id} cardInfo={children} /></div>)}
+                        
+                        <div >
                             <AddNew type="card" parentId={list.id} />
                         </div>
                     </div>

@@ -10,7 +10,7 @@ import Description from "./components/Description/description"
 
 function App() {
   return (
-<div>
+<div className="App">
      <BrowserRouter>
      <Provider store={store}>
      <Routes>
