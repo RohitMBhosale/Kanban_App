@@ -25,8 +25,31 @@ const ListSlice = createSlice({
             }
         })
 
-       }
+       },
+       reassign : (state,action)=>{
+        const { destination, add, insertIndex } = action.payload;
+  
+       state.list.map((e)=>{
+        if(e.id==destination){
+          e.children.splice(insertIndex,0,add)
+        }
+       })
+         
+         
+      },
+      removechild : (state,action)=>{
+        const { childIndex, parentId } = action.payload;
+        state.list.map((e) => {
+          if (e.id === parentId) {
+            e.children.splice(childIndex, 1);
+          }
+        });
+      },
+  
+      
+    
+
     }
 })
-export const {AddList,addCard} = ListSlice.actions;
+export const {AddList,addCard,removechild, reassign} = ListSlice.actions;
 export default ListSlice.reducer;

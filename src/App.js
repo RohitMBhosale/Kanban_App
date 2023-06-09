@@ -1,7 +1,6 @@
 
 import './App.css';
 import Body from './components/Dashboard/Body';
-import Navbar from './components/Navbar/navbar';
 import { Provider } from 'react-redux';
 import store from './components/redux';
 import { BrowserRouter, Routes, Route } from "react-router-dom";

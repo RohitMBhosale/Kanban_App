@@ -3,13 +3,22 @@ import styles from "./description.module.css";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { AiOutlineEye, AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
+import { BiEditAlt } from "react-icons/bi";
+import { MdOutlineFileDownloadDone } from "react-icons/md";
+import { ImAddressBook } from "react-icons/im";
+import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const initialState = "";
 
-export default function Discription() {
-
+function Discription() {
   const [taskList, setTaskList] = useState(initialState);
   const [addTask, setAddTask] = useState([]);
+  const navigate = useNavigate();
+  const params = useParams();
+ 
+
 
   function taskEvent(e) {
     setTaskList(e.target.value);
@@ -21,6 +30,10 @@ export default function Discription() {
     });
     setTaskList(initialState);
   }
+  var today = new Date();
+  var date = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+  var time = today.getHours() + ":" + (today.getMinutes() + ":" + today.getSeconds());
+  var dateTime = date + " " + time;
 
   return (
     <>
@@ -50,16 +63,12 @@ export default function Discription() {
           </div>
         </div>
         <div className={styles.maintwo}>
-          <div>
-            <AiOutlineMenu />
+          <div className={styles.AiOutlineMenu}>
+            <ImAddressBook />
           </div>
           <div className={styles.second}>
             <h4>Description</h4>
-            <br />
-            <div>
-              {" "}
-              <p contentEditable>Add a more detailed description...</p>
-            </div>
+            <BiEditAlt className={styles.BiEditAlt} size={25} />
           </div>
         </div>
         <div className={styles.mainthird}>
@@ -82,14 +91,14 @@ export default function Discription() {
               value={taskList}
             ></input>
             <button className={styles.time1} onClick={onClickAddTask}>
-              +
+              <MdOutlineFileDownloadDone />
             </button>
           </div>
           <div className={styles.third_last}>
-            <ul>
+           
               {addTask.map((items) => {
                 return (
-                  <li>
+                  <ul>
                     <div className={styles.item_time}>
                       <div className={styles.item_time1}>
                         <span className={styles.pr}>
@@ -97,15 +106,20 @@ export default function Discription() {
                         </span>
                         {items}
                       </div>
-                      <p className={styles.timing_para}>1 sec ago</p>
+                      <div className={styles.date_time}>
+                      <p className={styles.timing_para}>{date}</p>
+                      <p className={styles.timing_para1}>{time}</p>
+                      </div>
                     </div>
-                  </li>
+                  </ul>
                 );
               })}
-            </ul>
+           
           </div>
         </div>
       </div>
     </>
   );
 }
+
+export default Discription;

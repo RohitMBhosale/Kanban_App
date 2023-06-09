@@ -51,4 +51,4 @@ export default function AddNew({type, parentId}){
         </form>}
     </div>
   )
-}
+  }
