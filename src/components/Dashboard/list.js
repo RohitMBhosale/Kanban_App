@@ -83,6 +83,7 @@ import { removechild, reassign } from '../redux/ListSlice'
 import { useDispatch } from "react-redux";
 
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
+import { RxDotsHorizontal } from "react-icons/rx";
 
 
 //using useselector we can access list in store
@@ -160,6 +161,7 @@ export default function List() {
                                  className={styles.list_addnew}
                                  >
                                 <Card key={card.id} cardInfo={card} />
+                                <RxDotsHorizontal className={styles.RxDotsHorizontal}/>
                               </div>
                             )
                         }

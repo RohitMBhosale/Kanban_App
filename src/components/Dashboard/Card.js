@@ -14,9 +14,7 @@ function handleBoxopen(card, index){
   setIsFormVisible(true)
   // navigate(`/description/${card.title}`);
 }
-function hideForm(){
-  setIsFormVisible(false)
-}
+
   return (
     <div >
     <blockquote  contenteditable="true" onClick={handleBoxopen} >
@@ -24,7 +22,7 @@ function hideForm(){
     </blockquote> 
     {isFormVisible && <form >
     < Discription/>
-    <button onClick={hideForm}>❌</button>
+    
     </form>}
                         
     </div>
