@@ -32,4 +32,4 @@
 
 <h4>Deployment Site Link:</h4>
 
-<h4>open https://google.com in your browser to viewthe application</h4>
+<h4>open https://vocal-axolotl-f2531f.netlify.app/? in your browser to viewthe application</h4>
