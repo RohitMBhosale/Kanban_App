@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Discription from '../Description/description'
 import { useNavigate } from "react-router-dom";
 import { RxDotsHorizontal } from "react-icons/rx";
+import styles from './Card.module.css'
 
 export default function Card({ cardInfo }) {
 
@@ -22,7 +23,7 @@ export default function Card({ cardInfo }) {
     navigate("/");
   }
   return (
-    <div >
+    <div className={styles.parent} >
       <blockquote contenteditable="true"  >
         {cardInfo.title}
       </blockquote>
