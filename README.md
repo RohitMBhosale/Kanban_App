@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Kanban_App
+<h3>About Project</h3>
+<p>The proposed project will allow students to create multiple boards for different courses and subjects, with columns representing different stages of a task's life cycle such as To Do, In Progress, and Done. The project will also include features such as drag and drop functionality to easily move tasks between columns, adding due dates and priority levels to each task, and the ability to assign tasks to specific team members or collaborators.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+</p>
+<h4>Collaborators:</h4>
+<ul>
+<li>1.Rohit Bhosale https://github.com/RohitMBhosale</li> 
+<li>3.Zeeshan Ansari https://github.com/Zeeshan00-7</li>
+<li>4.Ashlesha Bandgar https://github.com/AshleshaBandgar</li>
+</ul>  
 
-## Available Scripts
+<h4>Installation:</h4>
 
-In the project directory, you can run:
+<p>To install and run the application locally, follow these steps:</p>
+<ul>
+<li>1.Clone this repositary to your local machine</li>
+<li>2.Run npm install to install all dependencies</li>
+<li>3.Run npm run dev to start the development server</li>
+<li>4.open http://localhost:300/ in your browser to view the applications</li>
+<li>
+</ul> 
 
-### `npm start`
+<h4>Libraries used in this project:</h4>
+<ul>
+ <li>1.Material UI</li>
+ <li>2.Material Icons</li>
+ <li>3.Quill</li>
+ <li>4.react-router-dom</li>
+ <li>5.Beautiful dnd</li>
+ </ul> 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h4>Deployment Site Link:</h4>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h4>open https://vocal-axolotl-f2531f.netlify.app/? in your browser to viewthe application</h4>
