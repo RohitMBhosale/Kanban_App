@@ -2,12 +2,14 @@ import React from "react";
 import styles from "./description.module.css";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { AiOutlineEye, AiOutlineMenu } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BiEditAlt } from "react-icons/bi";
 import { MdOutlineFileDownloadDone } from "react-icons/md";
 import { ImAddressBook } from "react-icons/im";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { RxCross2 } from "react-icons/rx";
+import TextEditor from "./TextEditor";
 
 
 const initialState = "";
@@ -15,38 +17,62 @@ const initialState = "";
 function Discription() {
   const [taskList, setTaskList] = useState(initialState);
   const [addTask, setAddTask] = useState([]);
+  const [isFormVesible, setIsFormVesible] = useState(false)
+  const [isFormDesible, setIsFormDesible] = useState(false)
   const navigate = useNavigate();
   const params = useParams();
+
+  useEffect(() =>{
+    localStorage.setItem("taskList", JSON.stringify(taskList)  )
+  },[taskList])
  
-
-
   function taskEvent(e) {
     setTaskList(e.target.value);
   }
-
-  function onClickAddTask() {
-    setAddTask((oldItems) => {
-      return [...oldItems, taskList];
-    });
+  function onClickAddTask(e) {
+    e.preventDefault();
+   
+    // setAddTask((oldItems) => {
+    //   return [...oldItems, taskList];
+    //   localStorage.setItem('task', JSON.stringify())
+    //});
+    if(taskList!==""){
+      setAddTask([...addTask, {id:addTask.length+1, text:taskList.trim()}])
+    }
     setTaskList(initialState);
   }
   var today = new Date();
   var date = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
   var time = today.getHours() + ":" + (today.getMinutes() + ":" + today.getSeconds());
-  var dateTime = date + " " + time;
+
+  
+  function handleBoxopen() {
+    setIsFormVesible(true)
+
+  }
+  function handleBoxclose(){
+    setIsFormVesible(false)
+  }
+ 
+
+  function hideForm(){
+    setIsFormDesible(false)
+  }
 
   return (
     <>
       <div className={styles.container}>
+    
         <div className={styles.mainone}>
           <div className={styles.BsCreditCard2Back}>
             <span>
+         
               <BsCreditCard2Back />
             </span>
           </div>
           <div className={styles.first_right}>
             <div className={styles.cookblock}>
-              <span contentEditable>Cook Food</span>
+              <span contentEditable>ToDo</span>
               <br />
               <span>
                 in list <u>To Do</u>
@@ -68,7 +94,11 @@ function Discription() {
           </div>
           <div className={styles.second}>
             <h4>Description</h4>
-            <BiEditAlt className={styles.BiEditAlt} size={25} />
+            <BiEditAlt className={styles.BiEditAlt} size={25} onClick={handleBoxopen} />
+            {isFormVesible && <form >
+               <TextEditor/>
+               <button style={{position:"absolute",left:"600px", top:"350px"}} onClick={handleBoxclose}>close</button>
+            </form>}
           </div>
         </div>
         <div className={styles.mainthird}>
@@ -81,7 +111,7 @@ function Discription() {
             </span>
           </div>
           <div className={styles.third_second}>
-            <span className={styles.pr}>
+            <span className={styles.profile}>
               <b>RB</b>
             </span>
             <input
@@ -104,7 +134,7 @@ function Discription() {
                         <span className={styles.pr}>
                           <b>RB</b>
                         </span>
-                        {items}
+                       <li className={styles.activity_list} key={items.id}> {items.text}</li>
                       </div>
                       <div className={styles.date_time}>
                       <p className={styles.timing_para}>{date}</p>
@@ -117,6 +147,7 @@ function Discription() {
            
           </div>
         </div>
+        <button className={styles.RxCross2} onClick={hideForm}><RxCross2/></button>
       </div>
     </>
   );

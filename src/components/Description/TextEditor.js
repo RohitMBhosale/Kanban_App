@@ -9,7 +9,7 @@ export default function TextEditor() {
   return (
     <div>
       <div 
-      style={{ width: 500, height: 150}}>
+      style={{ width: 500, height: 150,background:'white' , position:"absolute"}}>
         <div  style={{background:'white'}} 
         ref={quillRef} />
       </div>
