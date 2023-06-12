@@ -5,9 +5,8 @@
 </p>
 <h4>Collaborators:</h4>
 <ul>
-<li>1.Rohit Bhosale</li> 
-<li>2.Abhay Khemnar</li>
-<li>3.Zeeshan Ansari</li>
+<li>1.Rohit Bhosale https://github.com/RohitMBhosale</li> 
+<li>3.Zeeshan Ansari https://github.com/Zeeshan00-7</li>
 <li>4.Ashlesha Bandgar https://github.com/AshleshaBandgar</li>
 </ul>  
 
@@ -24,7 +23,11 @@
 
 <h4>Libraries used in this project:</h4>
 <ul>
-<li>1.Material UI and Icons</li>
+ <li>1.Material UI</li>
+ <li>2.Material Icons</li>
+ <li>3.Quill</li>
+ <li>4.react-router-dom</li>
+ <li>5.Beautiful dnd</li>
  </ul> 
 
 <h4>Deployment Site Link:</h4>
