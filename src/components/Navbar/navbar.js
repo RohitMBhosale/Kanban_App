@@ -5,13 +5,17 @@ import { BiObjectsVerticalTop } from "react-icons/bi";
 import { BiFilter } from "react-icons/bi";
 import { MdBolt } from "react-icons/md";
 import { BsRocketTakeoff } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
+
+ 
+
   return (
     <>
       <div className={styles.navbar_section}>
         <div className={styles.leftSide_navbar}>
-          <h1>Kanban App</h1>
+          <h1>KanBan App</h1>
           <IoStarOutline className={styles.IoStarOutline} size={17} />
         </div>
         <div className={styles.leftSide_navbar1}>
@@ -26,14 +30,6 @@ export default function Navbar() {
         </div>
         <div className={styles.rightSide_navbar}>
           <div className={styles.all_btns}>
-            <button className={styles.common_btn2}>
-              <BsRocketTakeoff size={19} className={styles.AiOutlineTeam} />
-              Power Ups
-            </button>
-            <button className={styles.common_btn2}>
-              <MdBolt size={20} className={styles.AiOutlineTeam} />
-              Automation
-            </button>
             <button className={styles.common_btn2}>
               <BiFilter size={20} className={styles.AiOutlineTeam} />
               Filter

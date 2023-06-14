@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./description.module.css";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { AiOutlineEye, AiOutlineMenu } from "react-icons/ai";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { BiEditAlt } from "react-icons/bi";
 import { MdOutlineFileDownloadDone } from "react-icons/md";
 import { ImAddressBook } from "react-icons/im";
@@ -19,12 +19,9 @@ function Discription() {
   const [addTask, setAddTask] = useState([]);
   const [isFormVesible, setIsFormVesible] = useState(false)
   const [isFormDesible, setIsFormDesible] = useState(false)
-  const navigate = useNavigate();
-  const params = useParams();
+  
 
-  useEffect(() =>{
-    localStorage.setItem("taskList", JSON.stringify(taskList)  )
-  },[taskList])
+ 
  
   function taskEvent(e) {
     setTaskList(e.target.value);
@@ -32,12 +29,10 @@ function Discription() {
   function onClickAddTask(e) {
     e.preventDefault();
    
-    // setAddTask((oldItems) => {
-    //   return [...oldItems, taskList];
-    //   localStorage.setItem('task', JSON.stringify())
-    //});
+   
     if(taskList!==""){
       setAddTask([...addTask, {id:addTask.length+1, text:taskList.trim()}])
+      localStorage.setItem("taskList", JSON.stringify(taskList)  )
     }
     setTaskList(initialState);
   }

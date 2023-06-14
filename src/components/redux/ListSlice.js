@@ -35,6 +35,9 @@ const ListSlice = createSlice({
         }
        })
       },
+      changeBackground: (state, action) => {
+        state.background.push(action.payload);
+      },
       removechild : (state,action)=>{
         const { childIndex, parentId } = action.payload;
         state.list.map((e) => {
@@ -46,5 +49,5 @@ const ListSlice = createSlice({
   
     }
 })
-export const {AddList,addCard,removechild, reassign} = ListSlice.actions;
+export const {AddList,addCard,removechild, reassign,changeBackground} = ListSlice.actions;
 export default ListSlice.reducer;
